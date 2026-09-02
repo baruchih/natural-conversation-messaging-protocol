@@ -1,0 +1,319 @@
+{
+  "model": "gpt-4o-mini",
+  "k": 50,
+  "seed": "0x9ca2c1c1",
+  "t_probe": "0xa2c1c1",
+  "a": {
+    "last": "Fine by me.",
+    "intent": "Propose walking Saturday morning and roughly when. Stay in this casual scene. Do not change the purpose.",
+    "considered": 50,
+    "legal": 50,
+    "hits": 0,
+    "hit": null,
+    "candidates": [
+      {
+        "u": "How about we take a walk on Saturday morning? Maybe around 10?",
+        "p": 12341133,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I was thinking we could stroll around Saturday morning. How does 10 sound to you?",
+        "p": 4985582,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you think about heading out for a walk Saturday morning? I was thinking we could meet at 9.",
+        "p": 16279825,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s plan for a casual walk on Saturday morning. How about we aim for about 10:30?",
+        "p": 8643092,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I’d love to go for a walk Saturday morning. How does 10 work for you?",
+        "p": 9983520,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What if we hit the trails Saturday morning? Maybe around 9 or so?",
+        "p": 13554457,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How does a Saturday morning walk sound? I was thinking we could start around 10.",
+        "p": 2890364,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "If you’re up for it, let’s walk Saturday morning! Shall we say 10:30?",
+        "p": 12967266,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "You free Saturday morning? I think a stroll around 10 could be nice.",
+        "p": 5806083,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about we meet for a walk Saturday morning? I was thinking of around 9.",
+        "p": 1820971,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Want to go for a walk Saturday morning? I reckon we could meet up at 10.",
+        "p": 1522265,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you think about a Saturday morning walk? Maybe 10 or so?",
+        "p": 4195947,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I was thinking we could get together for a walk on Saturday morning. How does 10:30 strike you?",
+        "p": 9995418,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about we meet at 9 on Saturday for a walk? I think it’ll be nice!",
+        "p": 9879821,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s catch some fresh air Saturday morning with a walk. How does 10 sound?",
+        "p": 12365242,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Thinking of a stroll on Saturday morning—maybe around 10?",
+        "p": 1560464,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What’s your schedule like Saturday morning? I’d love to walk around 10.",
+        "p": 15366026,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about a relaxed walk Saturday morning? Maybe we could aim for 10:30?",
+        "p": 15988815,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I was hoping we could go for a walk together Saturday morning. Does 10 work?",
+        "p": 1048549,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you think about a little walk Saturday morning? I’m thinking maybe around 9.",
+        "p": 10343693,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s plan to take a walk Saturday morning! How’s 10:30 for you?",
+        "p": 12495890,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "You know, a Saturday morning walk sounds good to me. What about starting at 10?",
+        "p": 2735832,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Wanna meet up for a Saturday morning walk? I was thinking around 10 might be nice.",
+        "p": 8560580,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I’d like to suggest a walk Saturday morning. How does 10:00 sound?",
+        "p": 613526,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Are you free Saturday morning for a walk? I’d love to go around 10.",
+        "p": 1313194,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How does Saturday morning sound for a walk? Let’s say around 10:30?",
+        "p": 15826808,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let's get together for a morning walk on Saturday! Maybe we should aim for 10?",
+        "p": 1276813,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What about a Saturday morning walk? I think 10 would be perfect!",
+        "p": 2143036,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I’m thinking a walk on Saturday morning could be great. How does 9 sound?",
+        "p": 5191931,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about we start the weekend with a walk Saturday morning? I was thinking 10:30.",
+        "p": 6440088,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s do a walk on Saturday morning! How’s 10:00 for you?",
+        "p": 3309004,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What if we meet up Saturday morning for a stroll? Maybe around 10?",
+        "p": 7381455,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How does a walk on Saturday morning fit into your plans? I was thinking 10.",
+        "p": 15786660,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Want to plan a walk Saturday morning? I think 10:30 could work well.",
+        "p": 14957200,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I’m keen on a walk Saturday morning! How’s 9 sound to you?",
+        "p": 2464905,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you say to a Saturday morning walk? I’d like to meet around 10.",
+        "p": 10250906,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about a stroll on Saturday morning? I was thinking we could start at 10:30.",
+        "p": 290118,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s catch up with a walk Saturday morning. Do you like 10:00?",
+        "p": 13149404,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How’s Saturday morning for a little walk? I think 9 would be nice.",
+        "p": 1344715,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I’d love to take a walk on Saturday morning. Maybe around 10:30?",
+        "p": 6256779,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you think about a Saturday morning walk? I could do 10 for sure.",
+        "p": 7133088,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "If you’re free Saturday morning, I’d be down for a walk. Does 10 work?",
+        "p": 14387076,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s plan for a walk this Saturday morning! How does 10 sound to you?",
+        "p": 13873186,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "I think a walk on Saturday morning sounds refreshing. How about we aim for 10?",
+        "p": 703610,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Are you up for a walk Saturday morning? I suggest around 9.",
+        "p": 6008633,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "What do you say to a Saturday morning walk? I’d love to meet around 10:30.",
+        "p": 15518950,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How about we go for a walk Saturday morning? I was thinking 10:00 would be nice.",
+        "p": 3456029,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Let’s make a plan to walk Saturday morning. I’m thinking around 9.",
+        "p": 2740114,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "How does a Saturday morning stroll sound? We could do around 10:30.",
+        "p": 4054121,
+        "legal": true,
+        "hit": false
+      },
+      {
+        "u": "Thinking about walking together Saturday morning. What do you think of 10?",
+        "p": 8935103,
+        "legal": true,
+        "hit": false
+      }
+    ]
+  },
+  "b": null,
+  "k_session": null,
+  "result": "NO"
+}

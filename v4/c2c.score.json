@@ -1,0 +1,15 @@
+{
+  "hint": "bakery",
+  "width": 8,
+  "seed": "0x9ca2c1c1",
+  "t_sec": "0xc1",
+  "n": 58256,
+  "hinted": 0,
+  "q": 0,
+  "probes": 0,
+  "accidental": 0,
+  "bar": 0.0000152587890625,
+  "q_for_bar": 0.00390625,
+  "meets_bar": true,
+  "hinted_examples": []
+}

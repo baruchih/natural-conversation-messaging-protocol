@@ -1,0 +1,45 @@
+{
+  "u_probe": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+  "u_ack": "Sounds good. I'll bring my umbrella too, just in case.",
+  "probe_eligible": [
+    "thinking",
+    "saturday",
+    "morning"
+  ],
+  "ack_eligible": [
+    "sounds",
+    "bring"
+  ],
+  "start_hint": "thinking",
+  "finish_hint": "sounds",
+  "start": {
+    "base": "Thinking we can head out Saturday morning. The park works.",
+    "first": "Thinking we can head out Saturday morning. The park works.",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 40,
+    "hits": 0,
+    "hit": null
+  },
+  "finish": {
+    "base": "Alright, that sounds fine. See you later.",
+    "first": "Alright, that sounds fine. See you later.",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 42,
+    "hits": 1,
+    "hit": "Alright, it sounds good. See you later."
+  },
+  "corpus": {
+    "n": 99434,
+    "bar": 0.0000152587890625,
+    "start_hinted": 622,
+    "finish_hinted": 88,
+    "start_hits": 13,
+    "start_rate": 0.00013073998833397027,
+    "finish_hits": 0,
+    "finish_rate": 0,
+    "start_meets_bar": false,
+    "finish_meets_bar": true
+  }
+}

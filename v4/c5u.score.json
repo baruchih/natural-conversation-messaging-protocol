@@ -1,0 +1,431 @@
+{
+  "n": 12,
+  "sources": {
+    "start_donated": 9,
+    "start_hybrid": 3,
+    "start_derived": 0,
+    "finish_donated": 8,
+    "finish_hybrid": 1,
+    "finish_derived": 3
+  },
+  "donated_untouched": true,
+  "all_pairs": true,
+  "jobs": [
+    {
+      "id": "brief",
+      "start": {
+        "source": "hybrid",
+        "pair": [
+          "later",
+          "simple"
+        ]
+      },
+      "finish": {
+        "source": "derived",
+        "pair": [
+          "later",
+          "sweater"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": {
+          "pair": [
+            "later",
+            "simple"
+          ],
+          "base": "Later we can keep it simple. The walk works for me.",
+          "first": "Later we can keep it simple. The walk works for me.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 46,
+          "hits": 1,
+          "hit": "Later we can make it simple. The time works on my end!",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": {
+          "pair": [
+            "later",
+            "sweater"
+          ],
+          "base": "Alright, later I can grab a sweater. See you then.",
+          "first": "Alright, later I can grab a sweater. See you then.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 1,
+          "hit": "Okay, later I will grab a sweater. See you there.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "coffee",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "coffee",
+          "bring"
+        ]
+      },
+      "finish": {
+        "source": "derived",
+        "pair": [
+          "walk",
+          "packed"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": {
+          "pair": [
+            "walk",
+            "packed"
+          ],
+          "base": "Alright, the walk is set. I'm packed now.",
+          "first": "Alright, the walk is set. I'm packed now.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 44,
+          "hits": 0,
+          "hit": null,
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "train",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "catch",
+          "train"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "works",
+          "bring"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "dinner",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "carry",
+          "station"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "bring",
+          "outside"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "movie",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "tonight",
+          "bring"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "movie",
+          "jacket"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "gym",
+      "start": {
+        "source": "hybrid",
+        "pair": [
+          "lunch",
+          "maybe"
+        ]
+      },
+      "finish": {
+        "source": "hybrid",
+        "pair": [
+          "bring",
+          "around"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": {
+          "pair": [
+            "lunch",
+            "maybe"
+          ],
+          "base": "Lunch maybe works. The gym is ok.",
+          "first": "Lunch maybe works. The gym is ok.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 48,
+          "hits": 1,
+          "hit": "Lunch maybe is fine. The time is ok.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": {
+          "pair": [
+            "bring",
+            "around"
+          ],
+          "base": "Alright, I'll bring it around. See you there.",
+          "first": "Alright, I'll bring it around. See you there.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 32,
+          "hits": 3,
+          "hit": "Alright, I'll bring stuff around. See you then.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 3,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "library",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "library",
+          "afternoon"
+        ]
+      },
+      "finish": {
+        "source": "derived",
+        "pair": [
+          "jacket",
+          "bench"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": {
+          "pair": [
+            "jacket",
+            "bench"
+          ],
+          "base": "Alright, I'll grab a jacket. See you at the bench later.",
+          "first": "Alright, I'll grab a jacket. See you at the bench later.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 1,
+          "hit": "Okay, I have my jacket. See you at the bench later!",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "call",
+      "start": {
+        "source": "hybrid",
+        "pair": [
+          "later",
+          "bench"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "lunch",
+          "handy"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": {
+          "pair": [
+            "later",
+            "bench"
+          ],
+          "base": "Later we can meet at the bench. The call works for me.",
+          "first": "Later we can meet at the bench. The call works for me.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 46,
+          "hits": 1,
+          "hit": "Later we can meet at the bench. The time is fine on my end!",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 0,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": null
+      }
+    },
+    {
+      "id": "office",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "today",
+          "either"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "works",
+          "bring"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "beach",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "beach",
+          "morning"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "bring",
+          "extra"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "pizza",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "pizza",
+          "place"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "place",
+          "bring"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "garden",
+      "start": {
+        "source": "donated",
+        "pair": [
+          "bring",
+          "forecast"
+        ]
+      },
+      "finish": {
+        "source": "donated",
+        "pair": [
+          "bring",
+          "gloves"
+        ]
+      },
+      "start_untouched": true,
+      "finish_untouched": true,
+      "fill": {
+        "start": null,
+        "finish": null
+      }
+    }
+  ]
+}

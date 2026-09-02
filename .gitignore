@@ -1,0 +1,9 @@
+v4/c1d-raw/
+v4/c2d-raw/
+
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store

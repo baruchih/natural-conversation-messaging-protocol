@@ -1,0 +1,39 @@
+{
+  "k_session": "0xdca0b418",
+  "session_hint": "bench",
+  "t_start": "0x25",
+  "t_finish": "0x8",
+  "start": {
+    "base": "Let's head out Saturday morning and meet at the bench.",
+    "first": "Let's head out Saturday morning and meet at the bench.",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 44,
+    "hits": 1,
+    "hit": "We can set off in the morning and meet at the bench!"
+  },
+  "finish": {
+    "base": "Alright, that covers it. See you at the bench later.",
+    "first": "Alright, that covers it. See you at the bench later.",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 34,
+    "hits": 3,
+    "hit": "Alright, that covers it. See you by the bench later."
+  },
+  "corpus": {
+    "n": 99434,
+    "bar": 0.0000152587890625,
+    "bootstrap_hinted": 58,
+    "session_hinted": 67,
+    "arm_b_start": 1530,
+    "arm_b_rate": 0.015387090934690347,
+    "arm_c_start": 1,
+    "arm_c_start_rate": 0.000010056922179536176,
+    "arm_c_finish": 2,
+    "arm_c_finish_rate": 0.00002011384435907235,
+    "arm_b_meets_bar": false,
+    "arm_c_start_meets_bar": true,
+    "arm_c_finish_meets_bar": false
+  }
+}

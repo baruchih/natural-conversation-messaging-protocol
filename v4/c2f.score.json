@@ -1,0 +1,422 @@
+{
+  "base": "Sounds good. I'll bring an umbrella too, just in case.",
+  "slots": [
+    [
+      "Sounds good.",
+      "That sounds good."
+    ],
+    [
+      "I'll",
+      "I will"
+    ],
+    [
+      "bring",
+      "take"
+    ],
+    [
+      "an umbrella",
+      "my umbrella"
+    ],
+    [
+      "too",
+      "as well"
+    ],
+    [
+      ", just in case.",
+      ", to be safe."
+    ]
+  ],
+  "target": "0xf",
+  "n": 64,
+  "hinted": 64,
+  "unique_p": 49,
+  "hits": 1,
+  "hit": "Sounds good. I'll bring my umbrella too, just in case.",
+  "k_session": "0xdca0b418",
+  "realizations": [
+    {
+      "u": "Sounds good. I'll bring an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 50,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 2,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 4,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 48,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 15,
+      "hit": true
+    },
+    {
+      "u": "Sounds good. I'll bring my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 63,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 41,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll bring my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 51,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 59,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 37,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 49,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 22,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 46,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 32,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I'll take my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 52,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 41,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 19,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 27,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 8,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 60,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 34,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will bring my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 50,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 58,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 42,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 12,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 24,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 7,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 23,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 1,
+      "hit": false
+    },
+    {
+      "u": "Sounds good. I will take my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 21,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 19,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 27,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 17,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 54,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 14,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 0,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll bring my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 20,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 36,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 16,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 22,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 46,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 45,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 25,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 47,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I'll take my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 31,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 0,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 20,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 26,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 10,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 57,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 13,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 3,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will bring my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 11,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take an umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 33,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take an umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 53,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take an umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 11,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take an umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 19,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take my umbrella too, just in case.",
+      "hint": true,
+      "p_sec": 16,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take my umbrella too, to be safe.",
+      "hint": true,
+      "p_sec": 36,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take my umbrella as well, just in case.",
+      "hint": true,
+      "p_sec": 10,
+      "hit": false
+    },
+    {
+      "u": "That sounds good. I will take my umbrella as well, to be safe.",
+      "hint": true,
+      "p_sec": 58,
+      "hit": false
+    }
+  ]
+}

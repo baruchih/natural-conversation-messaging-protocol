@@ -1,0 +1,187 @@
+{
+  "n_jobs": 3,
+  "jobs": [
+    {
+      "id": "walk",
+      "scene": "Saturday morning walk",
+      "u_probe": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+      "u_ack": "Sounds good. I'll bring my umbrella too, just in case.",
+      "probe_eligible": [
+        "thinking",
+        "saturday",
+        "morning"
+      ],
+      "ack_eligible": [
+        "sounds",
+        "bring"
+      ],
+      "start_pair": [
+        "saturday",
+        "morning"
+      ],
+      "finish_pair": [
+        "sounds",
+        "bring"
+      ],
+      "k_session": "0xdca0b418",
+      "t_start": "0x25",
+      "t_finish": "0x8",
+      "probe_is_bootstrap": true,
+      "ack_is_bootstrap": true,
+      "start": {
+        "base": "We can head out Saturday morning. The park works.",
+        "first": "We can head out Saturday morning. The park works.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 42,
+        "hits": 1,
+        "hit": "We can set off Saturday in the morning. The park works!"
+      },
+      "finish": {
+        "base": "Alright, it sounds settled. I'll bring the notes.",
+        "first": "Alright, it sounds settled. I'll bring the notes.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 44,
+        "hits": 1,
+        "hit": "Alright, that sounds good. I'll bring the notes."
+      },
+      "corpus": {
+        "n": 99434,
+        "bar": 0.0000152587890625,
+        "start_hinted": 5,
+        "finish_hinted": 0,
+        "start_hits": 0,
+        "start_rate": 0,
+        "finish_hits": 0,
+        "finish_rate": 0,
+        "start_meets_bar": true,
+        "finish_meets_bar": true
+      }
+    },
+    {
+      "id": "cafe",
+      "scene": "rain, stay at the coffee shop",
+      "u_probe": "The rain looks serious. Want to just sit at the coffee shop this afternoon? I'll keep the umbrella handy in case we change our minds.",
+      "u_ack": "Yes, the coffee shop works. I'll bring my umbrella and grab a table by the window.",
+      "probe_eligible": [
+        "looks",
+        "serious",
+        "coffee",
+        "afternoon",
+        "handy",
+        "change",
+        "minds"
+      ],
+      "ack_eligible": [
+        "coffee",
+        "works",
+        "bring",
+        "table",
+        "window"
+      ],
+      "start_pair": [
+        "serious",
+        "minds"
+      ],
+      "finish_pair": [
+        "works",
+        "bring"
+      ],
+      "k_session": "0x1219b429",
+      "t_start": "0x33",
+      "t_finish": "0xe",
+      "probe_is_bootstrap": false,
+      "ack_is_bootstrap": false,
+      "start": {
+        "base": "The rain looks serious. I'm of two minds about going out.",
+        "first": "The rain looks serious. I'm of two minds about going out.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 38,
+        "hits": 1,
+        "hit": "Weather is quite serious. We're of two minds on heading out!"
+      },
+      "finish": {
+        "base": "Alright, coffee works. I'll bring the notes over.",
+        "first": "Alright, coffee works. I'll bring the notes over.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 42,
+        "hits": 1,
+        "hit": "Alright, that works. I'll bring the notes along."
+      },
+      "corpus": {
+        "n": 99434,
+        "bar": 0.0000152587890625,
+        "start_hinted": 0,
+        "finish_hinted": 0,
+        "start_hits": 0,
+        "start_rate": 0,
+        "finish_hits": 0,
+        "finish_rate": 0,
+        "start_meets_bar": true,
+        "finish_meets_bar": true
+      }
+    },
+    {
+      "id": "market",
+      "scene": "afternoon market before closing",
+      "u_probe": "Should we try the market before it closes? I can pack the umbrella if the clouds stay.",
+      "u_ack": "Let's do the market. I'll bring a spare bag and the umbrella.",
+      "probe_eligible": [
+        "market",
+        "closes",
+        "clouds"
+      ],
+      "ack_eligible": [
+        "market",
+        "bring",
+        "spare"
+      ],
+      "start_pair": [
+        "closes",
+        "clouds"
+      ],
+      "finish_pair": [
+        "market",
+        "bring"
+      ],
+      "k_session": "0x11d3ff1c",
+      "t_start": "0x12",
+      "t_finish": "0x35",
+      "probe_is_bootstrap": false,
+      "ack_is_bootstrap": false,
+      "start": {
+        "base": "Let's go before it closes. If the clouds hold we're fine.",
+        "first": "Let's go before it closes. If the clouds hold we're fine.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 40,
+        "hits": 3,
+        "hit": "Let's go before the place closes. When the clouds hold we're fine."
+      },
+      "finish": {
+        "base": "Alright, the market is the plan. I'll bring the list.",
+        "first": "Alright, the market is the plan. I'll bring the list.",
+        "n": 64,
+        "hinted": 64,
+        "unique_p": 34,
+        "hits": 3,
+        "hit": "Alright, the market works for me. I can bring the bag!"
+      },
+      "corpus": {
+        "n": 99434,
+        "bar": 0.0000152587890625,
+        "start_hinted": 1,
+        "finish_hinted": 1,
+        "start_hits": 0,
+        "start_rate": 0,
+        "finish_hits": 0,
+        "finish_rate": 0,
+        "start_meets_bar": true,
+        "finish_meets_bar": true
+      }
+    }
+  ]
+}

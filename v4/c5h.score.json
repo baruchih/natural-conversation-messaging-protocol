@@ -1,0 +1,455 @@
+{
+  "n": 12,
+  "kinds": {
+    "start_pair": 9,
+    "start_word": 3,
+    "finish_pair": 8,
+    "finish_word": 4,
+    "both_covered": 12
+  },
+  "all_agree": true,
+  "all_targets_differ": true,
+  "unused_all_rejected": true,
+  "jobs": [
+    {
+      "id": "brief",
+      "start": {
+        "kind": "word",
+        "word": "shops"
+      },
+      "finish": {
+        "kind": "word",
+        "word": "bridge"
+      },
+      "t_start": "0xf",
+      "t_finish": "0x22",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": null,
+      "fallback": {
+        "start": {
+          "word": "shops",
+          "base": "Let's head to the shops later. The plan works.",
+          "first": "Let's head to the shops later. The plan works.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 46,
+          "hits": 1,
+          "hit": "Let's head by the shops this afternoon. The plan is fine.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 28,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": {
+          "word": "bridge",
+          "base": "Alright, see you at the bridge later then.",
+          "first": "Alright, see you at the bridge later then.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 1,
+          "hit": "Okay, I'll be at the bridge shortly now.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 76,
+            "hits": 1,
+            "rate": 0.000010056922179536176,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "coffee",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "coffee",
+          "bring"
+        ]
+      },
+      "finish": {
+        "kind": "word",
+        "word": "coffee"
+      },
+      "t_start": "0x2e",
+      "t_finish": "0x29",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": null
+      },
+      "fallback": {
+        "start": null,
+        "finish": {
+          "word": "coffee",
+          "base": "Alright, coffee works. I'll stay in.",
+          "first": "Alright, coffee works. I'll stay in.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 42,
+          "hits": 0,
+          "hit": null,
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 96,
+            "hits": 2,
+            "rate": 0.00002011384435907235,
+            "meets_bar": false
+          }
+        }
+      }
+    },
+    {
+      "id": "train",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "catch",
+          "train"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "works",
+          "bring"
+        ]
+      },
+      "t_start": "0x36",
+      "t_finish": "0x21",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "dinner",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "carry",
+          "station"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "bring",
+          "outside"
+        ]
+      },
+      "t_start": "0x2f",
+      "t_finish": "0x2",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "movie",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "tonight",
+          "bring"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "movie",
+          "jacket"
+        ]
+      },
+      "t_start": "0x1c",
+      "t_finish": "0xf",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "gym",
+      "start": {
+        "kind": "word",
+        "word": "market"
+      },
+      "finish": {
+        "kind": "word",
+        "word": "jacket"
+      },
+      "t_start": "0x37",
+      "t_finish": "0x1a",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": null,
+      "fallback": {
+        "start": {
+          "word": "market",
+          "base": "Let's go to the market before lunch. The plan works.",
+          "first": "Let's go to the market before lunch. The plan works.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 0,
+          "hit": null,
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 83,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": {
+          "word": "jacket",
+          "base": "Alright, I'll grab a jacket. See you there.",
+          "first": "Alright, I'll grab a jacket. See you there.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 44,
+          "hits": 1,
+          "hit": "Alright, I'll grab my jacket. Meet you there.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 48,
+            "hits": 3,
+            "rate": 0.000030170766538608525,
+            "meets_bar": false
+          }
+        }
+      }
+    },
+    {
+      "id": "library",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "library",
+          "afternoon"
+        ]
+      },
+      "finish": {
+        "kind": "word",
+        "word": "ridge"
+      },
+      "t_start": "0x1e",
+      "t_finish": "0x19",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": null
+      },
+      "fallback": {
+        "start": null,
+        "finish": {
+          "word": "ridge",
+          "base": "Alright, see you at the ridge later then.",
+          "first": "Alright, see you at the ridge later then.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 44,
+          "hits": 0,
+          "hit": null,
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 10,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        }
+      }
+    },
+    {
+      "id": "call",
+      "start": {
+        "kind": "word",
+        "word": "jacket"
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "lunch",
+          "handy"
+        ]
+      },
+      "t_start": "0x5",
+      "t_finish": "0x28",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": null,
+        "finish": true
+      },
+      "fallback": {
+        "start": {
+          "word": "jacket",
+          "base": "I'll grab a jacket and call later. That works.",
+          "first": "I'll grab a jacket and call later. That works.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 34,
+          "hits": 1,
+          "hit": "I'll grab a jacket then call later. This is fine.",
+          "corpus": {
+            "n": 99434,
+            "bar": 0.0000152587890625,
+            "hinted": 48,
+            "hits": 0,
+            "rate": 0,
+            "meets_bar": true
+          }
+        },
+        "finish": null
+      }
+    },
+    {
+      "id": "office",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "today",
+          "either"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "works",
+          "bring"
+        ]
+      },
+      "t_start": "0x26",
+      "t_finish": "0x11",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "beach",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "beach",
+          "morning"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "bring",
+          "extra"
+        ]
+      },
+      "t_start": "0x17",
+      "t_finish": "0x3a",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "pizza",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "pizza",
+          "place"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "place",
+          "bring"
+        ]
+      },
+      "t_start": "0x31",
+      "t_finish": "0xc",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    },
+    {
+      "id": "garden",
+      "start": {
+        "kind": "pair",
+        "pair": [
+          "bring",
+          "forecast"
+        ]
+      },
+      "finish": {
+        "kind": "pair",
+        "pair": [
+          "bring",
+          "gloves"
+        ]
+      },
+      "t_start": "0x33",
+      "t_finish": "0xe",
+      "targets_differ": true,
+      "agree": true,
+      "unused_rejected": {
+        "start": true,
+        "finish": true
+      },
+      "fallback": {
+        "start": null,
+        "finish": null
+      }
+    }
+  ]
+}

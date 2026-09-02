@@ -1,0 +1,244 @@
+# NCMP Control
+
+**Status:** Research closed. Bootstrap cascade and C5-U frame pairs are in `process`. Not the protocol.  
+**Date:** September 2026  
+**Parent:** `ncmp/NCMP.md` (v0.1 Experimental, not frozen)  
+**Does not** invent a later numbered protocol.
+
+C0–C3 and C5-U are closed into `process`. `ncmp/NCMP.md` is NCMP v0.1 Experimental. Not frozen.
+
+------------------------------------------------------------------------
+
+## The property
+
+The Profile is pre-agreed. It says how to interpret.
+
+The transcript says whether NCMP activates, when it activates, who acknowledged it, when a frame begins, its length, when it ends, and what message it carried.
+
+``` text
+Profile          how to interpret
+transcript       whether / when / who / frames / payload
+```
+
+Given the agreed Profile and the complete ordered conversation, the conversation itself MUST contain the information required to reconstruct the NCMP session and its frames.
+
+Out-of-band activation is valid protocol engineering. It is rejected as the v0.1 direction because it violates that property. “Start decoding from turn 17” is weaker than replaying the transcript and seeing:
+
+``` text
+ordinary → PROBE → ACK → START → BODY → FINISH
+```
+
+Conversational handshake is required. Lexical recognition is the failed implementation, not the handshake.
+
+------------------------------------------------------------------------
+
+## The anomaly
+
+BODY and CONTROL are not the same kind of channel.
+
+``` text
+BODY
+    (state, U) → carrier V → mode / bits
+
+CONTROL  (current v0.1)
+    bootstrap: hint ∧ residual
+    after ACK: session pair ∧ residual
+```
+
+BODY may absorb an accidental `V`. That is the design. A false CONTROL can open a session, open a frame, declare a length, or close a frame. Those are not the same error.
+
+An ordinary utterance MUST NOT become control merely because of its semantic or lexical content.
+
+That requirement immediately rules out “use rarer words.” Rarer tokens only lower the collision rate. They keep the same architecture: magic English conjunctions.
+
+Do not optimize the current token sets. Replace the control mechanism.
+
+------------------------------------------------------------------------
+
+## Session establishment is not frame control
+
+Do not pre-agree four discriminators.
+
+``` text
+wrong
+    Profile: PROBE, ACK, START, FINISH surfaces
+```
+
+Separate bootstrap from everything afterward.
+
+``` text
+Profile
+   │
+   └── bootstrap discriminator
+ordinary conversation
+   │
+   │ U satisfies bootstrap condition
+   ▼
+PROBE                 exact string U_probe
+   │
+   │ T_ACK = F(control_seed, U_probe)
+   ▼
+PROBE_PENDING
+   │
+   │ U satisfies T_ACK
+   ▼
+ACK                   exact string U_ack
+   │
+   │ K_session = F(Profile.control_seed, U_probe, U_ack)
+   ▼
+ACTIVE
+        ↓
+START / FINISH from (K_session, state)
+```
+
+The Profile tells both sides how to recognize the initial handshake. The handshake establishes fresh shared state that controls everything afterward.
+
+PROBE and ACK are a conversational setup exchange. They are not “are we doing NCMP / yes.” They carry the exact strings from which session control is derived. Nothing extra has to cross the wire. Both parties already possess `U_probe` and `U_ack`.
+
+``` text
+same Profile
+session 1    U_probe₁, U_ack₁    → K₁
+session 2    U_probe₂, U_ack₂    → K₂
+```
+
+START and FINISH are not globally pre-agreed surfaces. Their targets exist only after this handshake. Different sessions under the same Profile MAY have different control spaces.
+
+The only pre-agreed control value is `control_seed`. Not four surfaces. Not a separate ACK initiator.
+
+``` text
+pre-agreed
+    control_seed
+derived from conversation
+    PROBE target       ← seed
+    ACK target         ← seed + U_probe
+    session control    ← seed + U_probe + U_ack
+    START / FINISH     ← session control + state
+```
+
+Each successful stage creates the namespace for the next.
+
+The transcript remains self-contained. A referee with the Profile and the full conversation sees:
+
+``` text
+ordinary
+ordinary
+PROBE
+ACK
+   ↓ derive session control
+ordinary
+START
+BODY
+...
+FINISH
+```
+
+No external “session starts here.”
+
+------------------------------------------------------------------------
+
+## State names the later transition
+
+Once ACTIVE, we still do not distinguish all controls from all utterances globally. We distinguish the one control that is legal in the current state.
+
+``` text
+state                     exceptional event
+INACTIVE                  PROBE     Profile bootstrap
+PROBE_PENDING             ACK       derived from U_probe
+ACTIVE / no frame         START     derived from K_session
+FRAME_ACTIVE              FINISH    derived from K_session
+```
+
+C0 showed `(state, U)` is enough for a witness. Control status is not `U` alone.
+
+``` text
+control status = (Profile, state, U)
+```
+
+After handshake, shared state includes `K_session`. That value was generated by the conversation.
+
+START length is a second value after the exceptional transition, not a fifth reserved phrase. C3 is YES. [NCMP-C3.md](NCMP-C3.md)
+
+------------------------------------------------------------------------
+
+## C0 — YES
+
+A control discriminator exists. Witness: [NCMP-C0.md](NCMP-C0.md).
+
+``` text
+X(state, U) → ORDINARY | EXCEPTIONAL
+```
+
+The important result is not the weighted sum. It is that these can coexist without partitioning C6:
+
+``` text
+BODY identity       C6(U)
+CONTROL identity    P(U) matched against T(state)
+```
+
+C0 did not measure collision. A 64-state `P` that hits `T` around `1/64` is fine for BODY and catastrophically high for START or FINISH. Existence is not a control code.
+
+------------------------------------------------------------------------
+
+## C1 — YES
+
+Bootstrap discriminator exists and meets `≤ 2⁻¹⁶`. [NCMP-C1.md](NCMP-C1.md) [NCMP-C1-D.md](NCMP-C1-D.md)
+
+24-bit `P` on exact `U`. `control_seed` only is pre-agreed. ACK target is derived. Distribution on 58256 ordinary utterances matches a uniform 24-bit draw. Accidental PROBE is treated as `≈ 2⁻²⁴`.
+
+C2-F first steerer is YES. The encoder enumerates local paraphrases; the receiver sees one sentence. [NCMP-C2-F.md](NCMP-C2-F.md)
+
+C2-B is YES. `K_session + state` derives START and FINISH residuals. Same hint. Same steerer. [NCMP-C2-B.md](NCMP-C2-B.md)
+
+------------------------------------------------------------------------
+
+## Program
+
+``` text
+C0   Can exceptional control exist?                    YES
+ ↓
+C1   Bootstrap: selective PROBE, and
+     U_probe derives the ACK target                 YES
+ ↓
+C2   Can the conversation bootstrap
+     the complete control lifecycle?
+        C2-A  natural 24-bit pair             NO
+        C2-C  bakery × 8-bit                 not YES
+        C2-D  umbrella × 6-bit, held-out     YES
+        C2-E  derived ACK / K_session        not YES
+        C2-F  steer the 6-bit residual       YES
+        C2-B  K_session → START / FINISH     YES
+ ↓
+C3   Encode START length                           YES
+ ↓
+     in process · v0.1 Experimental
+ ↓
+C4   After ACK, session hint?                      scored
+        no hint                         NO
+        session-derived hint            right shape
+                                        not a process change
+C5   Handshake donates START/FINISH hints          scored
+        FINISH from U_ack               usable
+        START from this U_probe         not a word
+C5-E conversational-word extractor                 scored
+        candidates are words            YES
+        thinking too common             START miss
+C5-P handshake-donated ordered pair                scored
+        (saturday, morning)             START YES
+        (sounds, bring)                 FINISH YES
+C5-G pair donation across jobs                     scored
+        walk / cafe / market            3 / 3
+C5-A availability on ordinary handshakes           scored
+        catalog donation                7 / 12
+        reuse given donate              7 / 7
+C5-H pair / session-word hierarchy                 scored
+        handshake-only decision         YES
+        fallback selectivity            C4 again
+C5-U donate what exists; derive the rest           in process
+        always an ordered pair          YES
+        fill path under bar             YES
+C5-S C5-U shadow machine                           scored
+        prefix conformance              YES
+                                        then promoted
+```
+
+C2–C3 and C5-U are in `process`. C4 through C5-H remain the research trail. Do not open C6, optimize the word list, or solve the residual lottery.

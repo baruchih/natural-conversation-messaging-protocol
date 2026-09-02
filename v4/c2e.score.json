@@ -1,0 +1,13 @@
+{
+  "u_probe": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+  "probe_ok": true,
+  "seed": "0x9ca2c1c1",
+  "t_ack": "0xf",
+  "n": 99434,
+  "hinted": 58,
+  "accidental_ack": 1,
+  "accidental_rate": 0.000010056922179536176,
+  "bar": 0.0000152587890625,
+  "meets_bar": true,
+  "k_session_self": "0xbc68db6a"
+}

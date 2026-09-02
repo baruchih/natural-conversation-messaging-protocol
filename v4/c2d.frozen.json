@@ -1,0 +1,315 @@
+{
+  "model": "gpt-4o-mini",
+  "k": 50,
+  "hint": "umbrella",
+  "seed": "0x9ca2c1c1",
+  "t_sec": "0x1",
+  "considered": 43,
+  "with_hint": 43,
+  "legal": 43,
+  "hits": 3,
+  "hit": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+  "candidates": [
+    {
+      "u": "How about we go for a walk Saturday morning? Just in case, I’ll bring an umbrella since the weather looks a bit iffy.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 46,
+      "hit": false
+    },
+    {
+      "u": "I was thinking we could stroll around Saturday morning. I’ll make sure to pack an umbrella, just in case it rains.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 41,
+      "hit": false
+    },
+    {
+      "u": "Are you up for a morning walk on Saturday? I’ll bring an umbrella to be safe; you never know with the weather.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "What do you think about taking a walk on Saturday morning? I’ll bring an umbrella, just to cover our bases.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 58,
+      "hit": false
+    },
+    {
+      "u": "Let’s hit the park Saturday morning! I’ll have an umbrella with me, just in case Mother Nature decides to surprise us.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 47,
+      "hit": false
+    },
+    {
+      "u": "Are you down for a walk Saturday morning? I’ll throw an umbrella in my bag, you know, just in case it drizzles.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 30,
+      "hit": false
+    },
+    {
+      "u": "Why don’t we plan a walk Saturday morning? I’ll bring an umbrella along; you can never be too prepared!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 1,
+      "hit": true
+    },
+    {
+      "u": "How does a Saturday morning walk sound? I’ll bring an umbrella, given the forecasts hint at rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 30,
+      "hit": false
+    },
+    {
+      "u": "I’d love to take a walk Saturday morning if you’re free! I’ll take an umbrella, just in case it starts to pour.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 21,
+      "hit": false
+    },
+    {
+      "u": "Are you interested in a walk Saturday morning? I’ll carry an umbrella. Better to be safe than sorry, right?",
+      "hint": true,
+      "legal": true,
+      "p_sec": 26,
+      "hit": false
+    },
+    {
+      "u": "What do you think about walking on Saturday morning? I’ll bring my umbrella just in case the skies open up.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 22,
+      "hit": false
+    },
+    {
+      "u": "I was thinking we could take a stroll Saturday morning. I’ll pack an umbrella, just to cover our backs from any rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 15,
+      "hit": false
+    },
+    {
+      "u": "Let’s plan for a morning walk on Saturday! I’ll bring an umbrella because the weather looks a little unpredictable.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 30,
+      "hit": false
+    },
+    {
+      "u": "How’s a Saturday morning walk sound to you? I’ll have an umbrella handy, you know, just in case we get caught in the rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 18,
+      "hit": false
+    },
+    {
+      "u": "Would you like to go for a walk Saturday morning? I’ll bring an umbrella, as there’s a chance of rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 21,
+      "hit": false
+    },
+    {
+      "u": "Are you up for a Saturday morning walk? Just to be prepared, I’ll be bringing an umbrella along with me.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 14,
+      "hit": false
+    },
+    {
+      "u": "What do you say to walking Saturday morning? I’ll bring an umbrella since the weather looks a bit sketchy.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 37,
+      "hit": false
+    },
+    {
+      "u": "Thinking we could walk Saturday morning—what do you think? I’ll take an umbrella, because it might shower a bit.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 41,
+      "hit": false
+    },
+    {
+      "u": "How about a walk Saturday morning? I’ll make sure to grab an umbrella, just in case!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 39,
+      "hit": false
+    },
+    {
+      "u": "What do you think about a stroll Saturday morning? I’ll have my umbrella with me; the forecast says it might rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 4,
+      "hit": false
+    },
+    {
+      "u": "Let’s go for a walk Saturday morning, if that works for you! I’ll bring an umbrella since it could rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 54,
+      "hit": false
+    },
+    {
+      "u": "Would you be down for a Saturday morning walk? I’ll pack an umbrella just in case the rain surprises us!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 50,
+      "hit": false
+    },
+    {
+      "u": "How does a walk Saturday morning sound? I’ll make sure to bring an umbrella; it might be one of those days.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 51,
+      "hit": false
+    },
+    {
+      "u": "What do you say to a Saturday morning walk? I’ll bring an umbrella, just in case the sky gets moody.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 54,
+      "hit": false
+    },
+    {
+      "u": "I’d love to walk Saturday morning! I’ll bring an umbrella to keep us dry if it ends up raining.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 46,
+      "hit": false
+    },
+    {
+      "u": "Thinking about a walk Saturday morning. I’ll have an umbrella with me so we’re ready for anything!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 1,
+      "hit": true
+    },
+    {
+      "u": "Are you interested in a walk Saturday morning? I’ll bring an umbrella since I've heard there might be rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 58,
+      "hit": false
+    },
+    {
+      "u": "How about a Saturday morning stroll? I’ll pack my umbrella just to be safe, you never know what the weather has planned.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 26,
+      "hit": false
+    },
+    {
+      "u": "Let’s plan for a morning walk on Saturday! I’ll take an umbrella along, just in case of a sprinkle.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 27,
+      "hit": false
+    },
+    {
+      "u": "Want to go for a walk Saturday morning? I’ll bring an umbrella. Better to be prepared, huh?",
+      "hint": true,
+      "legal": true,
+      "p_sec": 25,
+      "hit": false
+    },
+    {
+      "u": "What do you think about walking Saturday morning? I could take an umbrella along for peace of mind if it rains.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 47,
+      "hit": false
+    },
+    {
+      "u": "Are you free for a walk on Saturday morning? I’ll bring an umbrella; I’d rather not get soaked!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "How does a Saturday morning walk sound? I’ll ensure I have an umbrella, just in case we need it.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 19,
+      "hit": false
+    },
+    {
+      "u": "What do you think about going for a walk Saturday morning? I’ll bring an umbrella since rain seems possible.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 50,
+      "hit": false
+    },
+    {
+      "u": "Let’s go walking Saturday morning! I’ll be sure to bring an umbrella, just in case it starts drizzling.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 1,
+      "hit": true
+    },
+    {
+      "u": "Thinking about a Saturday morning walk! I’ll take an umbrella, as the weather’s looking a bit dicey.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 4,
+      "hit": false
+    },
+    {
+      "u": "Would you like to join me for a walk on Saturday morning? I’ll have an umbrella, just in case we get caught.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 17,
+      "hit": false
+    },
+    {
+      "u": "How about we take a walk on Saturday morning? I’ll come equipped with an umbrella, you know, just in case.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 37,
+      "hit": false
+    },
+    {
+      "u": "What do you think about planning a walk Saturday morning? I’ll be ready with an umbrella to keep us dry!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 62,
+      "hit": false
+    },
+    {
+      "u": "I’d love to walk Saturday morning! I’ll bring an umbrella since it looks like we might need it.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 60,
+      "hit": false
+    },
+    {
+      "u": "Are you up for a Saturday morning stroll? I can bring an umbrella if the weather’s not with us.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 12,
+      "hit": false
+    },
+    {
+      "u": "Let’s plan for a walk on Saturday morning! I’ll take an umbrella along since there’s a chance of rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 36,
+      "hit": false
+    }
+  ]
+}

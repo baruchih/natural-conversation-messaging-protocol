@@ -1,0 +1,14 @@
+{
+  "seed": "0x9ca2c1c1",
+  "width": 24,
+  "t_probe": "0xa2c1c1",
+  "corpus_n": 5289,
+  "accidental_hits": 0,
+  "hits": [],
+  "u_probe": "Let me know. 11941749.",
+  "p_u_probe": "0xa2c1c1",
+  "t_ack": "0x78db4f",
+  "t_ack_repeat": "0x78db4f",
+  "t_ack_deterministic": true,
+  "k_session_example": "0xa7b6c4"
+}

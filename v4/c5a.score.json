@@ -1,0 +1,549 @@
+{
+  "catalog_n": 12,
+  "catalog_probe_ok": 9,
+  "catalog_ack_ok": 8,
+  "catalog_both_ok": 7,
+  "catalog": [
+    {
+      "id": "brief",
+      "scene": "short walk ask",
+      "u_probe": "Walk later? I'll pack an umbrella.",
+      "u_ack": "Okay, umbrella too.",
+      "probe_eligible": [
+        "later"
+      ],
+      "ack_eligible": [],
+      "probe_ok": false,
+      "ack_ok": false,
+      "both_ok": false,
+      "start_pair": null,
+      "finish_pair": null,
+      "reuse": null
+    },
+    {
+      "id": "coffee",
+      "scene": "coffee after work",
+      "u_probe": "Coffee after work? I'll bring the umbrella.",
+      "u_ack": "Yes. I've got an umbrella.",
+      "probe_eligible": [
+        "coffee",
+        "bring"
+      ],
+      "ack_eligible": [],
+      "probe_ok": true,
+      "ack_ok": false,
+      "both_ok": false,
+      "start_pair": [
+        "coffee",
+        "bring"
+      ],
+      "finish_pair": null,
+      "reuse": null
+    },
+    {
+      "id": "train",
+      "scene": "evening train",
+      "u_probe": "Catch the train at six? I'll have the umbrella with me.",
+      "u_ack": "Six works. I'll bring mine.",
+      "probe_eligible": [
+        "catch",
+        "train"
+      ],
+      "ack_eligible": [
+        "works",
+        "bring"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "catch",
+        "train"
+      ],
+      "finish_pair": [
+        "works",
+        "bring"
+      ],
+      "k_session": "0x5b15b2e",
+      "t_start": "0x36",
+      "t_finish": "0x21",
+      "reuse": {
+        "start": {
+          "base": "Let's catch the train. Six is fine for me.",
+          "first": "Let's catch the train. Six is fine for me.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 38,
+          "hits": 0,
+          "hit": null
+        },
+        "finish": {
+          "base": "Alright, six works. I'll bring the notes over.",
+          "first": "Alright, six works. I'll bring the notes over.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 46,
+          "hits": 1,
+          "hit": "Alright, six works. I'll bring the notes over!"
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 0,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "dinner",
+      "scene": "dinner at eight",
+      "u_probe": "Dinner at eight still okay? I'll carry the umbrella over from the station.",
+      "u_ack": "Eight is perfect. I'll bring the umbrella and meet you outside.",
+      "probe_eligible": [
+        "dinner",
+        "eight",
+        "carry",
+        "station"
+      ],
+      "ack_eligible": [
+        "eight",
+        "perfect",
+        "bring",
+        "outside"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "carry",
+        "station"
+      ],
+      "finish_pair": [
+        "bring",
+        "outside"
+      ],
+      "k_session": "0x64af7c35",
+      "t_start": "0x2f",
+      "t_finish": "0x2",
+      "reuse": {
+        "start": {
+          "base": "I can carry on from the station. Eight still works for me.",
+          "first": "I can carry on from the station. Eight still works for me.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 0,
+          "hit": null
+        },
+        "finish": {
+          "base": "Alright, I'll bring the notes outside now.",
+          "first": "Alright, I'll bring the notes outside now.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 38,
+          "hits": 1,
+          "hit": "Okay, I can bring the plan outside now!"
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 2,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "movie",
+      "scene": "movie tonight",
+      "u_probe": "Want to see the movie tonight? I can bring the umbrella if it rains.",
+      "u_ack": "The movie works. I'll bring a jacket and the umbrella.",
+      "probe_eligible": [
+        "movie",
+        "tonight",
+        "bring",
+        "rains"
+      ],
+      "ack_eligible": [
+        "movie",
+        "works",
+        "bring",
+        "jacket"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "tonight",
+        "bring"
+      ],
+      "finish_pair": [
+        "movie",
+        "jacket"
+      ],
+      "k_session": "0xe4f8c762",
+      "t_start": "0x1c",
+      "t_finish": "0xf",
+      "reuse": {
+        "start": {
+          "base": "Tonight I can bring the notes. The show works.",
+          "first": "Tonight I can bring the notes. The show works.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 40,
+          "hits": 2,
+          "hit": "Tonight I can bring the plan. The show is fine!"
+        },
+        "finish": {
+          "base": "Alright, the movie is on. I'll grab a jacket.",
+          "first": "Alright, the movie is on. I'll grab a jacket.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 42,
+          "hits": 0,
+          "hit": null
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 0,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "gym",
+      "scene": "gym before lunch",
+      "u_probe": "Gym before lunch? I'll toss the umbrella in my bag.",
+      "u_ack": "See you there. I'll bring the umbrella just in case.",
+      "probe_eligible": [
+        "lunch"
+      ],
+      "ack_eligible": [
+        "bring"
+      ],
+      "probe_ok": false,
+      "ack_ok": false,
+      "both_ok": false,
+      "start_pair": null,
+      "finish_pair": null,
+      "reuse": null
+    },
+    {
+      "id": "library",
+      "scene": "library afternoon",
+      "u_probe": "Library this afternoon? I'll take the umbrella.",
+      "u_ack": "Fine by me. Umbrella in my bag.",
+      "probe_eligible": [
+        "library",
+        "afternoon"
+      ],
+      "ack_eligible": [],
+      "probe_ok": true,
+      "ack_ok": false,
+      "both_ok": false,
+      "start_pair": [
+        "library",
+        "afternoon"
+      ],
+      "finish_pair": null,
+      "reuse": null
+    },
+    {
+      "id": "call",
+      "scene": "call later",
+      "u_probe": "Can you call later? I'll stay in with the umbrella by the door.",
+      "u_ack": "I'll call after lunch. Keep the umbrella handy.",
+      "probe_eligible": [
+        "later"
+      ],
+      "ack_eligible": [
+        "lunch",
+        "handy"
+      ],
+      "probe_ok": false,
+      "ack_ok": true,
+      "both_ok": false,
+      "start_pair": null,
+      "finish_pair": [
+        "lunch",
+        "handy"
+      ],
+      "reuse": null
+    },
+    {
+      "id": "office",
+      "scene": "office or home",
+      "u_probe": "Office or home today? I'll pack an umbrella either way.",
+      "u_ack": "Home works. I'll bring the umbrella if I step out.",
+      "probe_eligible": [
+        "office",
+        "today",
+        "either"
+      ],
+      "ack_eligible": [
+        "works",
+        "bring"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "today",
+        "either"
+      ],
+      "finish_pair": [
+        "works",
+        "bring"
+      ],
+      "k_session": "0x7be6b8f2",
+      "t_start": "0x26",
+      "t_finish": "0x11",
+      "reuse": {
+        "start": {
+          "base": "Today either works. Home is ok.",
+          "first": "Today either works. Home is ok.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 36,
+          "hits": 0,
+          "hit": null
+        },
+        "finish": {
+          "base": "Alright, that works. I'll bring the notes over.",
+          "first": "Alright, that works. I'll bring the notes over.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 44,
+          "hits": 1,
+          "hit": "Alright, that works. I'll bring the notes over."
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 1,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "beach",
+      "scene": "beach morning",
+      "u_probe": "Beach in the morning? I'll still pack an umbrella for the wind.",
+      "u_ack": "Let's do the beach. I'll bring extra water and the umbrella.",
+      "probe_eligible": [
+        "beach",
+        "morning"
+      ],
+      "ack_eligible": [
+        "beach",
+        "bring",
+        "extra",
+        "water"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "beach",
+        "morning"
+      ],
+      "finish_pair": [
+        "bring",
+        "extra"
+      ],
+      "k_session": "0x36f58693",
+      "t_start": "0x17",
+      "t_finish": "0x3a",
+      "reuse": {
+        "start": {
+          "base": "The beach in the morning works. The wind is ok.",
+          "first": "The beach in the morning works. The wind is ok.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 48,
+          "hits": 2,
+          "hit": "The beach in the morning is fine. The wind looks fine!"
+        },
+        "finish": {
+          "base": "Alright, I'll bring extra water. See you there.",
+          "first": "Alright, I'll bring extra water. See you there.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 44,
+          "hits": 0,
+          "hit": null
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 1,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "pizza",
+      "scene": "usual pizza place",
+      "u_probe": "Pizza at the usual place? I'll walk over with the umbrella.",
+      "u_ack": "Usual place is good. I'll bring cash and the umbrella.",
+      "probe_eligible": [
+        "pizza",
+        "usual",
+        "place"
+      ],
+      "ack_eligible": [
+        "usual",
+        "place",
+        "bring"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "pizza",
+        "place"
+      ],
+      "finish_pair": [
+        "place",
+        "bring"
+      ],
+      "k_session": "0x1b955381",
+      "t_start": "0x31",
+      "t_finish": "0xc",
+      "reuse": {
+        "start": {
+          "base": "The pizza place works. Usual time is good.",
+          "first": "The pizza place works. Usual time is good.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 36,
+          "hits": 0,
+          "hit": null
+        },
+        "finish": {
+          "base": "Alright, that place works. I'll bring cash.",
+          "first": "Alright, that place works. I'll bring cash.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 38,
+          "hits": 1,
+          "hit": "Okay, the place works. I can bring the list!"
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 0,
+          "finish_hinted": 7,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    },
+    {
+      "id": "garden",
+      "scene": "garden Sunday",
+      "u_probe": "Help with the garden Sunday? I'll bring the umbrella if the forecast holds.",
+      "u_ack": "Sunday is good. I'll bring gloves and an umbrella.",
+      "probe_eligible": [
+        "garden",
+        "sunday",
+        "bring",
+        "forecast",
+        "holds"
+      ],
+      "ack_eligible": [
+        "sunday",
+        "bring",
+        "gloves"
+      ],
+      "probe_ok": true,
+      "ack_ok": true,
+      "both_ok": true,
+      "start_pair": [
+        "bring",
+        "forecast"
+      ],
+      "finish_pair": [
+        "bring",
+        "gloves"
+      ],
+      "k_session": "0x9e606bb1",
+      "t_start": "0x33",
+      "t_finish": "0xe",
+      "reuse": {
+        "start": {
+          "base": "I can bring tools if the forecast holds. Sunday works.",
+          "first": "I can bring tools if the forecast holds. Sunday works.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 42,
+          "hits": 0,
+          "hit": null
+        },
+        "finish": {
+          "base": "Alright, I'll bring gloves. Sunday is good.",
+          "first": "Alright, I'll bring gloves. Sunday is good.",
+          "n": 64,
+          "hinted": 64,
+          "unique_p": 28,
+          "hits": 2,
+          "hit": "Okay, I can bring gloves. Sunday works."
+        },
+        "corpus": {
+          "n": 99434,
+          "bar": 0.0000152587890625,
+          "start_hinted": 0,
+          "finish_hinted": 0,
+          "start_hits": 0,
+          "start_rate": 0,
+          "finish_hits": 0,
+          "finish_rate": 0,
+          "start_meets_bar": true,
+          "finish_meets_bar": true
+        }
+      }
+    }
+  ],
+  "ack_pop": {
+    "n": 64,
+    "ok": 32,
+    "pairs": {
+      "sounds,bring": 32,
+      "null": 32
+    }
+  }
+}

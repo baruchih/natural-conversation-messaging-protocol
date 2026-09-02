@@ -1,0 +1,23 @@
+{
+  "k_session": "0xdca0b418",
+  "start": {
+    "base": "Let's head out Saturday morning. I'll have the umbrella.",
+    "first": "Let's head out Saturday morning. I'll have the umbrella.",
+    "target": "0x25",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 46,
+    "hits": 1,
+    "hit": "We can set off Saturday morning. I'll have an umbrella!"
+  },
+  "finish": {
+    "base": "Alright, that covers it. I'll keep the umbrella handy.",
+    "first": "Alright, that covers it. I'll keep the umbrella handy.",
+    "target": "0x8",
+    "n": 64,
+    "hinted": 64,
+    "unique_p": 34,
+    "hits": 3,
+    "hit": "Alright, that's the plan. I'll keep the umbrella handy!"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "n": 58256,
+  "space": 16777216,
+  "unique": 58159,
+  "repeat_values": 97,
+  "max_freq": 2,
+  "occupancy": {
+    "1": 58062,
+    "2": 97
+  },
+  "expected_pairs": 101.14023923873901,
+  "observed_pairs": 97,
+  "bit_frac_min": 0.49665270530074157,
+  "bit_frac_max": 0.5034159571546278,
+  "chi8": 247.29469925844552,
+  "chi8_df": 255,
+  "chi12": 4031.661631419909,
+  "chi12_df": 4095,
+  "short_n": 14979,
+  "long_n": 19720,
+  "short_chi8": 250.00060084117794,
+  "long_chi8": 265.9407707910752,
+  "seeds": 256,
+  "expected_per_target": 0.0034723281860351562,
+  "expected_target_hits": 0.888916015625,
+  "observed_target_hits": 3,
+  "targets_with_hits": 3,
+  "max_target_hits": 1,
+  "construction_seed_hits": 0,
+  "slack": 256
+}

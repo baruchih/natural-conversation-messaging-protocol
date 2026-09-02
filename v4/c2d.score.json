@@ -1,0 +1,24 @@
+{
+  "hint": "umbrella",
+  "width": 6,
+  "seed": "0x9ca2c1c1",
+  "t_sec": "0x1",
+  "n": 99434,
+  "hinted": 58,
+  "q": 0.0005833014864130981,
+  "probes": 1,
+  "accidental": 0.000010056922179536176,
+  "bar": 0.0000152587890625,
+  "q_for_bar": 0.0009765625,
+  "meets_bar": true,
+  "hinted_examples": [
+    "Both stood bending over a perambulator with a green umbrella.",
+    "I was sitting near the door—Elizabeth saw me directly; but he did not; he was busy with the umbrella.",
+    "He was very careful of his valise and umbrella, bringing them in with his own hands, and resisting, pertinaciously, all offers from the various servants to relieve him of them.",
+    "Wilson, for that was the old gentleman’s name, rose up, and, after carefully adjusting his valise and umbrella, proceeded deliberately to take out his spectacles and fix them on his nose; and, this operation being performed, read as follows: “Ran away from the subscriber, my mulatto boy, George.",
+    "So, as he stood carefully stroking his umbrella, and folding and patting down all the creases in it, he proceeded on with his exhortations in a general way.",
+    "Wilson sat down to a table, and began nervously chewing the handle of his umbrella.",
+    "The friendly little old man shook it heartily, and after a little shower of caution, he took his umbrella, and fumbled his way out of the room.",
+    "Then he began looking at once for his umbrella."
+  ]
+}

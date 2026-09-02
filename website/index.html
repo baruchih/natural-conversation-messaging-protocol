@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>NCMP 0.1 · What if a conversation could also be a protocol?</title>
+    <meta
+      name="description"
+      content="NCMP v0.1 Experimental. The same conversation can be both conversation and protocol."
+    />
+    <meta property="og:title" content="NCMP 0.1 · Experimental" />
+    <meta
+      property="og:description"
+      content="What if a conversation could also be a protocol?"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        var pref = localStorage.getItem("ncmp-theme") || "system";
+        var dark =
+          pref === "dark" ||
+          (pref === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = pref;
+        document.documentElement.dataset.scheme = dark ? "dark" : "light";
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="top">
+      <a class="wordmark" href="#hero">NCMP</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#agree">Profile</a>
+        <a href="#session">Session</a>
+        <a href="#wire">Wire</a>
+        <a href="#prove">Prove</a>
+        <a href="#machine">Machine</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#dive">Dive</a>
+        <a href="#next">Next</a>
+        <a href="#build">Build</a>
+        <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/NCMP.md" target="_blank" rel="noopener noreferrer">Protocol</a>
+        <a href="https://github.com/baruchih/natural-conversation-messaging-protocol" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <button
+        type="button"
+        class="theme"
+        id="theme-toggle"
+        aria-label="Theme: system"
+        title="Cycle theme: system, light, dark"
+      >
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero">
+        <p class="hero-name">Natural Conversation Messaging Protocol</p>
+        <h1>What if a conversation<br />could also be a protocol?</h1>
+        <p class="lede">
+          Machines already exchange natural language. NCMP shows that the same
+          conversation can also carry deterministic machine-readable state.
+        </p>
+
+        <div class="hero-stage" aria-label="Ordinary conversation that is also a protocol">
+          <div class="bubble is-a">
+            <span class="who a">A</span>
+            <p>Want to walk before the shops get busy?</p>
+          </div>
+          <div class="bubble is-b">
+            <span class="who b">B</span>
+            <p>Yes, the park gate works if we leave early.</p>
+          </div>
+          <div class="bubble is-a">
+            <span class="who a">A</span>
+            <p>If the fog holds we turn around at the bench.</p>
+          </div>
+          <div class="hero-carry">
+            <p class="hero-arrow">the same conversation is also carrying</p>
+            <dl class="hero-fields">
+              <div><dt>ACTION</dt><dd>GET</dd></div>
+              <div><dt>RESOURCE</dt><dd>CUSTOMER</dd></div>
+              <div><dt>ARGUMENT</dt><dd>1F45A2</dd></div>
+            </dl>
+            <p class="hero-arrow is-down">↓</p>
+            <p class="hero-object">GET CUSTOMER 1F45A2</p>
+            <p class="hero-caption">
+              ACTION and RESOURCE meanings come from the agreed profile.<br />
+              Their selected values, and the argument, are transported as bits.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#agree">See what they agree ↓</a>
+          <a class="btn" href="#prove">Watch a message emerge</a>
+          <a class="btn" href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/NCMP.md" target="_blank" rel="noopener noreferrer">Read the protocol</a>
+        </div>
+      </section>
+
+      <section class="section" id="layers">
+        <p class="kicker">60 seconds · The dual layer</p>
+        <h2>Every turn is language. Some turns are also bits.</h2>
+        <p class="measure">
+          Humans hear a reply. The machines, sharing one profile and one
+          transcript, compute a carrier value, a next mode, and sometimes a
+          symbol. v0.1 uses C6 for that carrier.
+          <span class="choice-badge">Profile choice</span>
+          NCMP does not require C6. Nothing extra is sent.
+        </p>
+
+        <div class="duals">
+          <article class="dual">
+            <p class="dual-said">“The pasta was decent and the bread came out warm.”</p>
+            <div class="dual-split">
+              <div>
+                <p class="label">Language</p>
+                <p>ordinary reply</p>
+              </div>
+              <div class="dual-proto">
+                <p class="label">Protocol</p>
+                <p>V = 15</p>
+                <p>next = DATA</p>
+                <p class="quiet">no bits · peer turn</p>
+              </div>
+            </div>
+          </article>
+          <article class="dual is-data">
+            <p class="dual-said">“Yes, the park gate works if we leave early.”</p>
+            <div class="dual-split">
+              <div>
+                <p class="label">Language</p>
+                <p>ordinary reply</p>
+              </div>
+              <div class="dual-proto">
+                <p class="label">Protocol</p>
+                <p>V = 12</p>
+                <p>bit = 0</p>
+                <p>next = DATA</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="agree">
+        <p class="kicker">What’s agreed beforehand?</p>
+        <h2>The profile says what the bits mean. The conversation selects them.</h2>
+        <p class="measure">
+          A and B agree a Profile before the conversation. That agreement sets
+          the vocabularies and therefore the header width. NCMP does not
+          allocate one bit to ACTION and one bit to RESOURCE.
+        </p>
+
+        <div class="profiles">
+          <article>
+            <p class="label">Baseline example</p>
+            <h3>Profile A · v0.1 conformance</h3>
+            <div class="codebooks">
+              <table>
+                <caption>ACTION</caption>
+                <tbody>
+                  <tr><th>0</th><td>GET</td></tr>
+                  <tr><th>1</th><td>SET</td></tr>
+                </tbody>
+              </table>
+              <table>
+                <caption>RESOURCE</caption>
+                <tbody>
+                  <tr><th>0</th><td>CUSTOMER</td></tr>
+                  <tr><th>1</th><td>ORDER</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <dl class="widths">
+              <div><dt>action width</dt><dd>1 bit</dd></div>
+              <div><dt>resource width</dt><dd>1 bit</dd></div>
+              <div><dt>header</dt><dd>2 bits</dd></div>
+              <div><dt>control_seed</dt><dd>0x9CA2C1C1</dd></div>
+              <div><dt>bootstrap_hint</dt><dd>umbrella</dd></div>
+            </dl>
+          </article>
+          <article>
+            <p class="label">Another valid profile</p>
+            <h3>Profile B · wider example</h3>
+            <div class="codebooks">
+              <table>
+                <caption>ACTION</caption>
+                <tbody>
+                  <tr><th>00</th><td>GET</td></tr>
+                  <tr><th>01</th><td>SET</td></tr>
+                  <tr><th>10</th><td>DELETE</td></tr>
+                  <tr><th>11</th><td>EXECUTE</td></tr>
+                </tbody>
+              </table>
+              <table>
+                <caption>RESOURCE</caption>
+                <tbody>
+                  <tr><th>000</th><td>CUSTOMER</td></tr>
+                  <tr><th>001</th><td>ORDER</td></tr>
+                  <tr><th>010</th><td>ACCOUNT</td></tr>
+                  <tr><th>011</th><td>INVOICE</td></tr>
+                  <tr><th>100</th><td>PRODUCT</td></tr>
+                  <tr><th>101</th><td>SESSION</td></tr>
+                  <tr class="is-reserved"><th>110</th><td>reserved</td></tr>
+                  <tr class="is-reserved"><th>111</th><td>reserved</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <dl class="widths">
+              <div><dt>action width</dt><dd>2 bits</dd></div>
+              <div><dt>resource width</dt><dd>3 bits</dd></div>
+              <div><dt>header</dt><dd>5 bits</dd></div>
+            </dl>
+            <p class="note">
+              This 4×6 shape has been demonstrated on the same machine
+              (<a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/v4/NCMP-V4-AR-C2.md" target="_blank" rel="noopener noreferrer">AR-C2</a>).
+              It is not the published v0.1 vocabulary.
+            </p>
+          </article>
+        </div>
+
+        <div class="rule">
+          <pre class="tree"><code>action_width   = ceil(log₂ |ACTION|)
+resource_width = ceil(log₂ |RESOURCE|)
+header_width   = action_width + resource_width</code></pre>
+          <p>
+            The agreed Profile determines the vocabulary, the header width,
+            the control seed, and the bootstrap hint. 2×2 is a cheap
+            conformance example, not an architectural constraint.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="session">
+        <p class="kicker">How does a session start?</p>
+        <h2>The Profile is pre-agreed. The conversation creates the session.</h2>
+        <p class="measure">
+          There is no reserved PROBE phrase, ACK phrase, START phrase, or
+          FINISH phrase. The Profile bootstraps the session. The handshake
+          then establishes its frame-control vocabulary.
+        </p>
+        <pre class="tree"><code>Profile
+  control_seed
+  bootstrap_hint
+       ↓
+natural PROBE
+       ↓ exact U_probe
+derive T_ack
+       ↓
+natural ACK
+       ↓ exact U_ack
+derive K_session
+derive START_PAIR from U_probe
+derive FINISH_PAIR from U_ack
+       ↓
+natural START
+       START_PAIR ∧ T_START
+       L(K_session, U) → argument length
+       ↓
+sparse BODY
+       ↓
+natural FINISH
+       FINISH_PAIR ∧ T_FINISH</code></pre>
+        <p class="measure">
+          Bootstrap stays bootstrap-only. After ACK, use what the conversation
+          gave; derive only what it did not. A cue is not enough. Seeing the
+          session’s START or FINISH words does not make a turn a control. The
+          corresponding 6-bit residual must also match.
+        </p>
+        <pre class="tree"><code>ordinary utterance
+      │
+      ├── pair absent ───────────────→ BODY / CHAT
+      │
+      └── pair present
+              │
+              ├── residual misses ───→ BODY / CHAT
+              │
+              └── residual matches ──→ CONTROL</code></pre>
+        <p class="measure note">
+          Seeing <code>saturday</code> is not START. Seeing
+          <code>saturday</code> then <code>morning</code> is not necessarily
+          START. The pair grounds the control in the conversation; the residual
+          makes mere occurrence insufficient. Bootstrap is the same shape:
+          <code>umbrella</code> plus a matching residual.
+          <span class="choice-badge">Profile choice</span>
+          <code>umbrella</code> and <code>0x9CA2C1C1</code> are Baseline
+          values, not the architecture.
+        </p>
+      </section>
+
+      <section class="section" id="wire">
+        <p class="kicker">What crosses the wire?</p>
+        <h2>One bitstream. Three fields. Profile-defined widths.</h2>
+        <p class="measure">
+          BODY is not three messages. It is one accumulator. ACTION and
+          RESOURCE are recovered from the prefix once those bits exist. They
+          are not assigned at START.
+        </p>
+        <p class="eq"><code>[action bits][resource bits][argument bits]</code></p>
+
+        <div class="wire-examples">
+          <article>
+            <p class="label">Walkthrough · Profile A · argument 5</p>
+            <p class="hero-object compact">GET CUSTOMER 23</p>
+            <p class="note">Application view of ARGUMENT <code>10111</code>. NCMP transports bits.</p>
+            <pre class="tree wire-legend"><code>00 10111
+││ └── argument
+│└──── CUSTOMER
+└───── GET
+argument
+10111</code></pre>
+          </article>
+          <article>
+            <p class="label">Hero object · Profile A · brief → 24</p>
+            <p class="hero-object compact">GET CUSTOMER 1F45A2</p>
+            <pre class="tree"><code>argument
+1F45A2
+canonical bits
+00011111 01000101 10100010</code></pre>
+            <p class="note">
+              Legal Baseline argument lengths are 0, 5, 8, 24, and 128. 16 is
+              not among them, so the public object is 1F45A2, not 1F45.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section lab-section" id="prove">
+        <p class="kicker">5 minutes · Prove it</p>
+        <h2>Watch a message emerge.</h2>
+        <p class="measure">
+          The published reference transcript. START declares 5 argument bits
+          by <code>L(K_session, U)</code>, not by the word <code>short</code>.
+          In this profile the header is 2 bits. Click a turn, or use the arrows.
+        </p>
+
+        <div class="lab" id="lab" tabindex="0">
+          <div class="lab-talk" id="example-rail" role="listbox" aria-label="Transcript"></div>
+          <aside class="lab-scope" id="example-panel">
+            <div id="example-body" aria-live="polite"></div>
+            <div class="example-nav">
+              <button type="button" id="lab-prev" data-step="-1">Prev</button>
+              <button type="button" id="lab-next" data-step="1">Next</button>
+              <span class="k" id="lab-step"></span>
+            </div>
+          </aside>
+        </div>
+        <p class="measure note">
+          The walkthrough uses a 5-bit argument so every transition fits on
+          screen. The same Baseline Profile supports 24-bit arguments such as
+          <code>1F45A2</code>, and 128-bit arguments have been transported
+          experimentally.
+        </p>
+      </section>
+
+      <section class="section" id="how">
+        <p class="kicker">How can that be deterministic?</p>
+        <h2>Shared state plus the accepted utterance is enough.</h2>
+        <p class="measure">
+          The receiver does not consult an encoder, a candidate list, or a
+          language model. Both sides apply the same <code>process</code> to the
+          same ordered transcript.
+        </p>
+        <p class="eq"><code>decode(stateₙ, Uₙ) → (bitsₙ, stateₙ₊₁)</code></p>
+        <div class="neq" aria-label="Mode is not ownership">
+          <div>
+            <p class="label">Mode</p>
+            <p>SKIP / DATA</p>
+          </div>
+          <span>≠</span>
+          <div>
+            <p class="label">Ownership</p>
+            <p>A / B</p>
+          </div>
+        </div>
+        <p class="measure note">
+          A peer turn can move the machine into DATA without contributing data
+          itself. Inside a frame, every non-control utterance is BODY. Only
+          owner DATA with wire remaining appends bits.
+        </p>
+      </section>
+
+      <section class="section" id="machine">
+        <p class="kicker">The protocol machine</p>
+        <h2>The protocol is a state machine.</h2>
+        <p class="measure">
+          The state machine has two interacting levels. Session state handles
+          negotiation; frame state handles an open message. Inside a frame,
+          DATA/SKIP mode determines whether an owner turn can contribute bits.
+        </p>
+
+        <div class="two-machines">
+          <article>
+            <p class="label">Conversation lifecycle</p>
+            <p class="eq"><code>idle → handshake → active ⇄ frame</code></p>
+          </article>
+          <article>
+            <p class="label">Within-frame mode</p>
+            <p class="eq"><code>next mode = transition(V)</code></p>
+            <p><code>DATA</code> if <code>V &lt; 32</code></p>
+            <p><code>SKIP</code> otherwise</p>
+          </article>
+        </div>
+
+        <p class="label">Session</p>
+        <pre class="tree machine-fig"><code>idle ──PROBE──► handshake ──ACK──► active ──START──► frame ──FINISH──► active
+                         derive K_session         L → length</code></pre>
+
+        <p class="label">Inside an open frame</p>
+        <pre class="tree machine-fig"><code>                      FRAME OPEN
+                            │
+                  non-control utterance
+                            │
+                            ▼
+                          BODY
+                            │
+                            ▼
+                        V = C6(U)
+                            │
+              ┌─────────────┴─────────────┐
+              │                           │
+     current mode + owner           transition(V)
+              │                           │
+      ┌───────┼────────┐                  ▼
+      │       │        │           next SKIP / DATA
+    SKIP  DATA+peer  DATA+owner
+      │       │        │
+   no bits  no bits  symbol(V)</code></pre>
+        <p class="measure note">
+          The carrier value <code>V</code> is an input to the within-frame
+          machine. In v0.1, C6 produces <code>V</code>.
+          <span class="choice-badge">Profile choice</span>
+          A different profile can sit a different carrier in that slot.
+        </p>
+
+        <p class="machine-rule">
+          Every non-control utterance inside an open frame advances the
+          machine. Only an owner turn processed in DATA mode can append bits.
+        </p>
+
+        <p class="label">Participant state</p>
+        <p class="eq"><code>session ∈ { idle, handshake, active }</code></p>
+        <p class="eq"><code>u_probe · u_ack · k_session · frame · last_object</code></p>
+        <p class="measure note">A frame exists only while a frame is open.</p>
+
+        <div class="machine-split">
+          <article>
+            <p class="label">Controls · not BODY</p>
+            <dl class="controls">
+              <div><dt>PROBE</dt><dd>idle → handshake</dd></div>
+              <div><dt>ACK</dt><dd>handshake → active · store U_ack · derive K_session</dd></div>
+              <div><dt>START</dt><dd>active → frame · L declares length</dd></div>
+              <div><dt>FINISH</dt><dd>frame → active</dd></div>
+            </dl>
+          </article>
+          <article>
+            <p class="label">Active frame state</p>
+            <dl class="frame-fields">
+              <div><dt>owner</dt><dd>A | B</dd></div>
+              <div><dt>argument_bits</dt><dd>declared at START</dd></div>
+              <div><dt>mode</dt><dd>SKIP | DATA</dd></div>
+              <div><dt>accumulator</dt><dd>header then argument</dd></div>
+              <div><dt>header_remaining</dt><dd>unfilled header bits</dd></div>
+              <div><dt>argument_remaining</dt><dd>unfilled argument bits</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="evidence">
+        <p class="kicker">Is this real?</p>
+        <h2>What has actually worked.</h2>
+        <p class="measure">Measured results. Not laws. Caveats sit on the numbers.</p>
+
+        <div class="stats">
+          <article>
+            <p class="stat">128</p>
+            <h3>bits transported end to end</h3>
+            <p>Argument under the earlier constant-type Profile 0. Not header evidence. One run.</p>
+          </article>
+          <article>
+            <p class="stat">252 / 252</p>
+            <h3>constrained DATA opportunities found a carrier</h3>
+            <p>Search was not the bottleneck. Three of ten frames still died on exhausted runway.</p>
+          </article>
+          <article>
+            <p class="stat">4 × 6</p>
+            <h3>ACTION × RESOURCE table on the same machine</h3>
+            <p>Demonstrated extensibility. Not the published v0.1 vocabulary.</p>
+          </article>
+          <article>
+            <p class="stat">0 / 99,434</p>
+            <h3>accidental frame controls</h3>
+            <p>
+              No accidental START or FINISH. Five ordinary turns contained the
+              START pair; none also matched its residual. One accidental PROBE
+              occurred on the same freeze. Measured, not a bound.
+            </p>
+          </article>
+          <article>
+            <p class="stat">~0.3</p>
+            <h3>chosen bits / body turn observed</h3>
+            <p>An illustration from naturally bounded scenes. Not a bound or a law.</p>
+          </article>
+          <article>
+            <p class="stat">0 / 3</p>
+            <h3>treatment conversations judged less natural</h3>
+            <p>Tiny sample. Both arms language-model generated. One treatment payload incomplete.</p>
+          </article>
+          <article class="is-not">
+            <p class="stat">NOT</p>
+            <h3>a covertness claim</h3>
+            <p>Anyone who knows the profile and sees the transcript can run the same referee.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="is-not">
+        <p class="kicker">What it isn’t</p>
+        <div class="split-lists">
+          <div>
+            <h2>NCMP is</h2>
+            <ul class="yes">
+              <li>deterministic</li>
+              <li>stateful</li>
+              <li>conversational transport</li>
+              <li>machine-readable</li>
+            </ul>
+          </div>
+          <div>
+            <h2>NCMP 0.1 is not</h2>
+            <ul class="no">
+              <li>encryption</li>
+              <li>authenticated</li>
+              <li>tamper-resistant</li>
+              <li>proven covert</li>
+              <li>JSON disguised as English</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="dive">
+        <p class="kicker">Deep dive · Architecture is not the profile</p>
+        <h2>v0.1 uses C6 to turn an utterance into a deterministic value.</h2>
+        <p class="measure">
+          <span class="choice-badge">Profile choice</span>
+          C6 is a Baseline Profile choice, not part of the NCMP architecture.
+          NCMP requires a deterministic carrier; v0.1 uses C6, a deliberately
+          simple, model-free one. A different profile can replace it with
+          another carrier.
+        </p>
+        <p class="measure">
+          Its job is simple: both machines independently turn the same accepted
+          utterance into the same value.
+        </p>
+
+        <pre class="tree slot-tree"><code>NCMP architecture
+      │
+      └── requires a deterministic carrier
+                    │
+                    ├── C6          ← v0.1 choice
+                    ├── carrier X   ← possible
+                    └── carrier Y   ← possible</code></pre>
+
+        <div class="flow" aria-label="One utterance becomes V">
+          <p class="flow-said">“The tea in the flask is still warm enough.”</p>
+          <p class="flow-arrow">↓</p>
+          <p class="flow-step">C6 <span class="choice-badge">Profile choice</span></p>
+          <p class="flow-arrow">↓</p>
+          <p class="flow-value">V = 5</p>
+        </div>
+
+        <p class="label">How 5 happened</p>
+        <div class="flow is-calc" aria-label="How C6 calculates V">
+          <p>keep a–z</p>
+          <p class="flow-arrow">↓</p>
+          <p class="letters-run">theteaintheflaskisstillwarmenough</p>
+          <p class="note">a = 1 … z = 26</p>
+          <p class="flow-arrow">↓</p>
+          <p>sum · mod 64</p>
+          <p class="flow-arrow">↓</p>
+          <p class="flow-value">V = 5</p>
+        </div>
+        <p class="measure note">
+          NFC, then lowercase. Spaces, punctuation, and digits are ignored. The
+          empty string has <code>V = 0</code>.
+        </p>
+
+        <h3 class="subhead">What does this profile do with V?</h3>
+        <p class="measure">
+          C6 only produces <code>V</code>. The profile decides what
+          <code>V</code> means.
+        </p>
+
+        <div class="v-fork" aria-label="V is used two ways">
+          <p class="flow-value">V = 5</p>
+          <div class="v-fork-arms">
+            <div>
+              <p class="label">next mode</p>
+              <p>DATA</p>
+            </div>
+            <div>
+              <p class="label">symbol</p>
+              <p>11</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="use-v">
+          <article>
+            <p class="label">State transition</p>
+            <p><code>V &lt; 32</code> → next mode DATA</p>
+            <p><code>V ≥ 32</code> → next mode SKIP</p>
+          </article>
+          <article>
+            <p class="label">Symbol · owner DATA</p>
+            <p><code>V mod 3 = 0</code> → 0</p>
+            <p><code>V mod 3 = 1</code> → 10</p>
+            <p><code>V mod 3 = 2</code> → 11</p>
+            <p class="note">If one bit remains, the last bit is <code>V mod 2</code>.</p>
+          </article>
+        </div>
+        <p class="measure note">
+          A peer turn or an owner SKIP still computes the next mode. It does not
+          append a symbol.
+        </p>
+
+        <div class="playground-wrap">
+          <p class="label">Meaning is irrelevant to decoding</p>
+          <p class="measure">
+            <code>Hi.</code> is <code>V = 17</code>.
+            <code>Let's meet around 7:30 before the lot fills up.</code> is
+            <code>V = 14</code>. The decoder is not asking what the sentence
+            means. It is asking <code>C6(U)</code>.
+          </p>
+          <div class="playground">
+            <label for="c6-input">Any utterance → V</label>
+            <textarea id="c6-input" rows="3" spellcheck="false">The tea in the flask is still warm enough.</textarea>
+            <div class="chips" aria-label="Examples">
+              <button type="button" data-fill="The tea in the flask is still warm enough.">tea</button>
+              <button type="button" data-fill="Hi.">Hi.</button>
+              <button type="button" data-fill="Let's meet around 7:30 before the lot fills up.">clock time</button>
+              <button type="button" data-fill="How was dinner last night after you sat down?">dinner</button>
+            </div>
+            <div class="c6-steps" id="c6-steps"></div>
+          </div>
+        </div>
+
+        <p class="measure note">
+          Any total map from utterance to a finite alphabet could sit in this
+          slot. C6 is a cheap first carrier. It is not the intellectual core of
+          NCMP.
+        </p>
+
+        <div class="arch">
+          <article>
+            <p class="label">Architecture</p>
+            <p>stateful conversational transport</p>
+            <p class="note">The protocol object is the conversation.</p>
+          </article>
+          <article class="arch-profile">
+            <p class="label">Profile · v0.1 Baseline example</p>
+            <dl>
+              <div><dt>carrier</dt><dd>C6 <span class="choice-badge">Profile choice</span></dd></div>
+              <div><dt>transition</dt><dd>V &lt; 32 → DATA</dd></div>
+              <div><dt>symbols</dt><dd>0 / 10 / 11</dd></div>
+              <div><dt>ACTION</dt><dd>GET / SET · 1 bit</dd></div>
+              <div><dt>RESOURCE</dt><dd>CUSTOMER / ORDER · 1 bit</dd></div>
+              <div><dt>bootstrap</dt><dd>umbrella</dd></div>
+              <div><dt>frame cues</dt><dd>handshake pair</dd></div>
+              <div><dt>control_seed</dt><dd>0x9CA2C1C1</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="next">
+        <p class="kicker">What’s next</p>
+        <h2>A roadmap, not a promise.</h2>
+        <p class="measure">
+          This is v0.1 Experimental. Later work sits beside it. It does not
+          silently rewrite the machine.
+        </p>
+        <ol class="road">
+          <li>Natural-bound characterization</li>
+          <li>Larger distinguishability evaluation</li>
+          <li>Encoder reliability / efficiency</li>
+          <li>Alternative profiles / carriers</li>
+          <li>Loss / duplicate / reorder</li>
+          <li>Repair / resynchronization</li>
+          <li>Integrity / replay protection</li>
+        </ol>
+      </section>
+
+      <section class="section" id="build">
+        <p class="kicker">Build it</p>
+        <h2>The protocol is independently implementable.</h2>
+        <p class="measure">
+          A reader who has only <code>NCMP.md</code> can write
+          <code>process(transcript) → protocol state</code>. The reference
+          decoder demonstrates that machine. It does not define it.
+        </p>
+        <div class="build">
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/NCMP.md" target="_blank" rel="noopener noreferrer">
+            <p class="label">Authoritative</p>
+            <h3>NCMP.md</h3>
+            <p>v0.1 Experimental. The protocol.</p>
+          </a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/reference/ncmp.ts" target="_blank" rel="noopener noreferrer">
+            <p class="label">Decoder</p>
+            <h3>reference/ncmp.ts</h3>
+            <p><code>new NCMP().process("A", U)</code></p>
+          </a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/reference/ncmp.test.ts" target="_blank" rel="noopener noreferrer">
+            <p class="label">Conformance</p>
+            <h3>npm test</h3>
+            <p>The published transcript and required cases.</p>
+          </a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol" target="_blank" rel="noopener noreferrer">
+            <p class="label">Source</p>
+            <h3>GitHub</h3>
+            <p>Protocol, reference decoder, and lineage.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot" id="foot">
+      <div class="foot-row">
+        <div class="foot-brand">
+          <div>
+            <p class="wordmark">NCMP</p>
+            <p>Natural Conversation Messaging Protocol</p>
+            <p class="badge">v0.1 Experimental</p>
+          </div>
+          <p class="credit">
+            Created by Baruchi Har-Lev ·
+            <a href="mailto:baruchih@gmail.com">baruchih@gmail.com</a>
+          </p>
+        </div>
+        <nav aria-label="Documents">
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/NCMP.md" target="_blank" rel="noopener noreferrer">Protocol</a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/reference/ncmp.ts" target="_blank" rel="noopener noreferrer">Reference implementation</a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol/blob/main/ncmp/reference/ncmp.test.ts" target="_blank" rel="noopener noreferrer">Conformance tests</a>
+          <a href="https://github.com/baruchih/natural-conversation-messaging-protocol" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

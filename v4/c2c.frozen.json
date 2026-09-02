@@ -1,0 +1,322 @@
+{
+  "model": "gpt-4o-mini",
+  "k": 50,
+  "hint": "bakery",
+  "seed": "0x9ca2c1c1",
+  "t_sec": "0xc1",
+  "considered": 44,
+  "with_hint": 42,
+  "legal": 42,
+  "hits": 0,
+  "hit": null,
+  "candidates": [
+    {
+      "u": "How about we take a walk on Saturday morning? We could swing by that bakery afterward for some fresh pastries.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 27,
+      "hit": false
+    },
+    {
+      "u": "What do you think about a Saturday morning stroll? I’ve been craving some treats from that bakery, too!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 111,
+      "hit": false
+    },
+    {
+      "u": "I was thinking, why don’t we go for a walk Saturday morning? We can grab some goodies from the bakery on the way back.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 133,
+      "hit": false
+    },
+    {
+      "u": "Are you free Saturday morning for a walk? I’d love to stop by the bakery afterwards and grab something sweet.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 202,
+      "hit": false
+    },
+    {
+      "u": "What if we walked together Saturday morning? I can almost taste those delicious pastries from the bakery already!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 221,
+      "hit": false
+    },
+    {
+      "u": "Let’s plan on walking Saturday morning, yeah? I’d really like to make a quick stop at the bakery afterward.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 189,
+      "hit": false
+    },
+    {
+      "u": "How does a Saturday morning walk sound? We should totally grab a bite from the bakery while we're out.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 178,
+      "hit": false
+    },
+    {
+      "u": "I was wondering if you’d be up for a walk Saturday morning. Getting some treats from that bakery would be a great finish!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 163,
+      "hit": false
+    },
+    {
+      "u": "What do you say about a Saturday morning stroll? I bet that bakery will have some amazing stuff to try.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 32,
+      "hit": false
+    },
+    {
+      "u": "Thinking we could walk Saturday morning. We should definitely check out the bakery afterward for breakfast.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 145,
+      "hit": false
+    },
+    {
+      "u": "Want to go for a walk Saturday morning? I can’t resist those pastries from the bakery.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 218,
+      "hit": false
+    },
+    {
+      "u": "How about a Saturday morning walk? We can hit up the bakery afterwards for some delicious snacks.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 197,
+      "hit": false
+    },
+    {
+      "u": "Shall we plan on a walk Saturday morning? I’d love to stop by the bakery afterwards; they have the best cookies!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 183,
+      "hit": false
+    },
+    {
+      "u": "What do you think about walking Saturday morning? The bakery has some new items I want to check out!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 107,
+      "hit": false
+    },
+    {
+      "u": "I’m in the mood for a Saturday morning walk. Plus, we can get some treats from the bakery to enjoy!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 174,
+      "hit": false
+    },
+    {
+      "u": "Saturday morning walk? We can always grab something at the bakery on our way.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 55,
+      "hit": false
+    },
+    {
+      "u": "How does Saturday morning sound for a walk? I’ve been thinking about those croissants from the bakery.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 53,
+      "hit": false
+    },
+    {
+      "u": "I’d love to walk Saturday morning if you’re free! We can pop into the bakery for some snacks after.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 253,
+      "hit": false
+    },
+    {
+      "u": "Are you up for a walk on Saturday morning? The bakery has some great stuff lately that I want to try.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 70,
+      "hit": false
+    },
+    {
+      "u": "Let’s do a walk Saturday morning. It would be nice to stop by the bakery afterward and grab a bite.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 47,
+      "hit": false
+    },
+    {
+      "u": "How's Saturday morning for a walk? I could definitely go for some goodies from the bakery then.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 84,
+      "hit": false
+    },
+    {
+      "u": "Let’s make it a plan to walk Saturday morning. Bakery treats afterward would be the perfect reward.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 138,
+      "hit": false
+    },
+    {
+      "u": "What do you think about walking together Saturday morning? The bakery's pastries are calling my name!",
+      "hint": false,
+      "legal": false,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "How about we hit the pavement Saturday morning? I’m dreaming of that bakery stop afterward!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 249,
+      "hit": false
+    },
+    {
+      "u": "You up for a walk Saturday morning? We could totally swing by the bakery and get something nice.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 102,
+      "hit": false
+    },
+    {
+      "u": "How does a Saturday morning walk sound? I’ve got my mind set on some fresh baked goods from the bakery.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 179,
+      "hit": false
+    },
+    {
+      "u": "I was thinking we could take a walk Saturday morning. A stop at the bakery would be perfect afterward!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 15,
+      "hit": false
+    },
+    {
+      "u": "How about a walk on Saturday morning? I’d like to grab something sweet from the bakery to share!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 181,
+      "hit": false
+    },
+    {
+      "u": "Want to plan on a Saturday morning stroll? We could get some treats from the bakery to enjoy too.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 142,
+      "hit": false
+    },
+    {
+      "u": "What do you say to a walk Saturday morning? I know just the bakery where we can grab some snacks!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 39,
+      "hit": false
+    },
+    {
+      "u": "Shall we walk Saturday morning? The bakery has some great stuff; it’ll be a nice treat!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 39,
+      "hit": false
+    },
+    {
+      "u": "How about a Saturday morning walk? I’ll bring my appetite for some bakery goodies afterward!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 166,
+      "hit": false
+    },
+    {
+      "u": "I’d love to walk Saturday morning if you’re around. The bakery’s got some new items I want to try!",
+      "hint": false,
+      "legal": false,
+      "p_sec": 78,
+      "hit": false
+    },
+    {
+      "u": "Could we consider a Saturday morning walk? That bakery stop will make it even better!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 224,
+      "hit": false
+    },
+    {
+      "u": "Are you free for a walk Saturday morning? I think we should definitely hit that bakery afterwards!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 74,
+      "hit": false
+    },
+    {
+      "u": "Let’s do a Saturday morning walk. And we can swing by the bakery for treats on our way back!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 119,
+      "hit": false
+    },
+    {
+      "u": "What do you think about a Saturday morning stroll? That bakery stop would be a nice way to end it!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 125,
+      "hit": false
+    },
+    {
+      "u": "Want to join me for a walk Saturday morning? I could really go for some pastries from that bakery.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 211,
+      "hit": false
+    },
+    {
+      "u": "How does Saturday morning sound for a walk? We’d have to grab a few things from the bakery, right?",
+      "hint": true,
+      "legal": true,
+      "p_sec": 58,
+      "hit": false
+    },
+    {
+      "u": "Let’s plan for a walk Saturday morning. I’ve got a craving for those pastries at the bakery!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 167,
+      "hit": false
+    },
+    {
+      "u": "Are you up for a walk on Saturday morning? I think we should definitely check out the bakery!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 84,
+      "hit": false
+    },
+    {
+      "u": "How about a little Saturday morning walk? The bakery is just too good to miss afterward!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 190,
+      "hit": false
+    },
+    {
+      "u": "I was wondering if you’d like to walk Saturday morning. A quick bakery stop afterward would be a treat!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 231,
+      "hit": false
+    },
+    {
+      "u": "What if we walked Saturday morning? I can already picture those pastries from the bakery in my mind!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 120,
+      "hit": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "base": "Yeah, I think we can head out Saturday morning. I'll have the umbrella too.",
+  "first": "Yeah, I think we can head out Saturday morning. I'll have the umbrella too.",
+  "n": 512,
+  "hinted": 512,
+  "starts": 8,
+  "unique_p": 64,
+  "unique_len": 3,
+  "by_length": {
+    "empty": 2,
+    "short": 0,
+    "tiny": 4,
+    "brief": 0,
+    "wide": 2
+  },
+  "first_by_length": {
+    "empty": "Yeah, I guess let's head out in the morning. I'll grab the umbrella too!",
+    "short": null,
+    "tiny": "Yeah, I guess let's head out in the morning. I'll have an umbrella as well!",
+    "brief": null,
+    "wide": "Yeah, I guess we can set off Saturday morning. I'll grab an umbrella too."
+  },
+  "tiny": {
+    "want": 8,
+    "hits": 4,
+    "hit": "Yeah, I guess let's head out in the morning. I'll have an umbrella as well!"
+  },
+  "brief": {
+    "want": 24,
+    "hits": 0,
+    "hit": null
+  },
+  "lengths": {
+    "empty": 0,
+    "short": 5,
+    "tiny": 8,
+    "brief": 24,
+    "wide": 128
+  }
+}

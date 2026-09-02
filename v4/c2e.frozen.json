@@ -1,0 +1,368 @@
+{
+  "model": "gpt-4o-mini",
+  "k": 50,
+  "hint": "umbrella",
+  "seed": "0x9ca2c1c1",
+  "u_probe": "Thinking we could walk Saturday morning—what do you say? I’ll pack an umbrella, just to be on the safe side!",
+  "t_ack": "0xf",
+  "considered": 50,
+  "with_hint": 40,
+  "legal": 40,
+  "hits": 0,
+  "hit": null,
+  "k_session_a": null,
+  "k_session_b": null,
+  "same_session": false,
+  "candidates": [
+    {
+      "u": "Sure, sounds good! Bringing an umbrella is a smart move—better safe than sorry, right?",
+      "hint": true,
+      "legal": true,
+      "p_sec": 56,
+      "hit": false
+    },
+    {
+      "u": "Saturday morning works for me! I like the idea of the umbrella; it’s been a bit unpredictable lately.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 49,
+      "hit": false
+    },
+    {
+      "u": "I’m up for it! An umbrella is a great idea since you never know when the weather might change.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 46,
+      "hit": false
+    },
+    {
+      "u": "That sounds perfect! I appreciate you thinking ahead with the umbrella; I’ll need to grab my raincoat just in case.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 44,
+      "hit": false
+    },
+    {
+      "u": "Count me in! I’ll take my own umbrella too, just to be double prepared.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 45,
+      "hit": false
+    },
+    {
+      "u": "I’d love to! The umbrella is a clever touch; I hope it doesn’t rain, but you never know.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 49,
+      "hit": false
+    },
+    {
+      "u": "I’m down! It’s always good to have an umbrella handy, especially these days with the weather being so moody.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "Sounds like a plan! I like that you’re packing an umbrella; it’s always better to be prepared for a surprise shower.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 6,
+      "hit": false
+    },
+    {
+      "u": "I’m game! Let’s make sure we’re ready for anything with that umbrella.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 42,
+      "hit": false
+    },
+    {
+      "u": "Yeah, let’s do it! I always enjoy a good walk, and the umbrella is a smart addition.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 42,
+      "hit": false
+    },
+    {
+      "u": "Absolutely! I think the umbrella is a good call—who knows what the weather will do?",
+      "hint": true,
+      "legal": true,
+      "p_sec": 33,
+      "hit": false
+    },
+    {
+      "u": "That sounds great! I’ll make sure to bring my jacket too, just in case the chill hits.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 60,
+      "hit": false
+    },
+    {
+      "u": "I’m all for it! I love walking in the morning, and the umbrella will definitely come in handy.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 14,
+      "hit": false
+    },
+    {
+      "u": "Sure thing! I always like to have an umbrella ready when you’re walking around; you never know what might happen.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 0,
+      "hit": false
+    },
+    {
+      "u": "Sounds awesome! I’ll bring a snack too; walking in the rain can really build up an appetite!",
+      "hint": false,
+      "legal": false,
+      "p_sec": 36,
+      "hit": false
+    },
+    {
+      "u": "I’m in! I appreciate the umbrella plan; it’s always better to be prepared, especially in this weather.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 39,
+      "hit": false
+    },
+    {
+      "u": "Let’s do it! I’ll even pack some music for our walk if you’re up for it.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 12,
+      "hit": false
+    },
+    {
+      "u": "Count me in! I’m glad you’re thinking ahead with the umbrella; it’s been so unpredictable this week.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 14,
+      "hit": false
+    },
+    {
+      "u": "That works for me! I love walking in the morning, and we’ll be all set with that umbrella.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 19,
+      "hit": false
+    },
+    {
+      "u": "I’m excited! I’ll keep my fingers crossed for nice weather, but the umbrella is a great backup.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 3,
+      "hit": false
+    },
+    {
+      "u": "Definitely sounds fun! I’ll make sure to wear my sturdy shoes in case it gets muddy out there.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 62,
+      "hit": false
+    },
+    {
+      "u": "Absolutely! I’m totally down for a walk, and that umbrella will definitely come in handy.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "Great idea! I’ll bring a thermos with some coffee, so we can sip while we walk.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 55,
+      "hit": false
+    },
+    {
+      "u": "I’m up for that! An umbrella is a great idea; I’ve seen too many surprise downpours lately.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 55,
+      "hit": false
+    },
+    {
+      "u": "Sure, let’s go! I’ll bring my favorite shoes for walking, and the umbrella sounds like a lifesaver.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 57,
+      "hit": false
+    },
+    {
+      "u": "That sounds lovely! I’ll be ready with my umbrella too, just in case we need it!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 31,
+      "hit": false
+    },
+    {
+      "u": "I’m game for Saturday morning! Nice thinking with the umbrella; we might just avoid getting drenched.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 7,
+      "hit": false
+    },
+    {
+      "u": "Sounds like a fun plan! I hope we can dodge the rain; the umbrella is a smart backup just in case.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 62,
+      "hit": false
+    },
+    {
+      "u": "Count me in for a walk! I’ll bring a light snack and my umbrella; we’ll be all set.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 35,
+      "hit": false
+    },
+    {
+      "u": "I’m looking forward to it! The umbrella is a good idea; I love a little adventure in the rain.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 24,
+      "hit": false
+    },
+    {
+      "u": "That sounds nice! I’ll make sure to wear something comfy for walking, and the umbrella will definitely be handy.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 11,
+      "hit": false
+    },
+    {
+      "u": "I’m in! Glad you thought about the umbrella; it could be a soggy morning otherwise!",
+      "hint": true,
+      "legal": true,
+      "p_sec": 49,
+      "hit": false
+    },
+    {
+      "u": "Sure! I’ll bring my camera for some photos along the way, and the umbrella is smart thinking.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 28,
+      "hit": false
+    },
+    {
+      "u": "Sounds good to me! I hope the rain holds off so we can enjoy the walk without any hassle.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 42,
+      "hit": false
+    },
+    {
+      "u": "Absolutely, I’m in! I’ll grab a light jacket too, just to stay cozy while we walk.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 16,
+      "hit": false
+    },
+    {
+      "u": "I’d love that! An umbrella sounds like a great backup plan for our morning adventure.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 5,
+      "hit": false
+    },
+    {
+      "u": "Let’s definitely do that! I’ll make sure to wear my favorite walking shoes and bring the umbrella just in case.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 35,
+      "hit": false
+    },
+    {
+      "u": "Sounds like a plan! I’m good for Saturday, and I like that you’re packing the umbrella for safety.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 51,
+      "hit": false
+    },
+    {
+      "u": "I’m all in! It’s always better to have an umbrella than to end up soaked.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 50,
+      "hit": false
+    },
+    {
+      "u": "Let’s make it happen! I’ll throw in a small snack for us to enjoy while we walk too.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 32,
+      "hit": false
+    },
+    {
+      "u": "I love that idea! Waking up early for a walk sounds refreshing, and the umbrella is a thoughtful addition.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 1,
+      "hit": false
+    },
+    {
+      "u": "I’m definitely in! An umbrella and a stroll sound like the perfect combo, regardless of the weather.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 2,
+      "hit": false
+    },
+    {
+      "u": "That works for me! We never know with the weather, so I’m glad we’ll have the umbrella on hand.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "I’m looking forward to it! The umbrella will definitely help keep us dry if the skies decide to open up.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 59,
+      "hit": false
+    },
+    {
+      "u": "Sure, that sounds nice! I’ll wear my comfy clothes, and I appreciate you thinking ahead with the umbrella.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 55,
+      "hit": false
+    },
+    {
+      "u": "Sounds good! I like early morning walks, and packing an umbrella is always a smart move.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 17,
+      "hit": false
+    },
+    {
+      "u": "Absolutely! I’ll bring some snacks too just in case we want to linger a bit longer.",
+      "hint": false,
+      "legal": false,
+      "p_sec": 61,
+      "hit": false
+    },
+    {
+      "u": "That sounds amazing! I’m glad you mentioned the umbrella; I’ll be prepared for whatever comes our way.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 52,
+      "hit": false
+    },
+    {
+      "u": "I’m totally in! I’ll also keep my fingers crossed for a clear sky, but the umbrella is always a good backup.",
+      "hint": true,
+      "legal": true,
+      "p_sec": 25,
+      "hit": false
+    },
+    {
+      "u": "Sounds great! I’ll also bring some hot cocoa for us to sip on if it gets chilly!",
+      "hint": false,
+      "legal": false,
+      "p_sec": 12,
+      "hit": false
+    }
+  ]
+}
